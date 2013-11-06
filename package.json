@@ -26,7 +26,7 @@
 	},
 	"dependencies": {},
 	"devDependencies": {
-		"tape": "~1.1.0"
+		"tape": "~2.1.0"
 	}
 }
 
