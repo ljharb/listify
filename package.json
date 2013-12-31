@@ -4,7 +4,9 @@
 	"description": "Turn an array into a list of comma-separated values, appropriate for use in an English sentence.",
 	"main": "index.js",
 	"scripts": {
-		"test": "node test.js"
+		"test": "node test.js",
+		"coverage": "covert test.js",
+		"coverage-quiet": "covert test.js --quiet"
 	},
 	"repository": {
 		"type": "git",
@@ -26,7 +28,8 @@
 	},
 	"dependencies": {},
 	"devDependencies": {
-		"tape": "~2.3.2"
+		"tape": "~2.3.2",
+		"covert": "~0.3.0"
 	}
 }
 
