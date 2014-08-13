@@ -1,6 +1,6 @@
 {
 	"name": "listify",
-	"version": "0.0.1",
+	"version": "1.0.0",
 	"description": "Turn an array into a list of comma-separated values, appropriate for use in an English sentence.",
 	"main": "index.js",
 	"scripts": {
