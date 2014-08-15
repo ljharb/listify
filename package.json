@@ -4,7 +4,7 @@
 	"description": "Turn an array into a list of comma-separated values, appropriate for use in an English sentence.",
 	"main": "index.js",
 	"scripts": {
-		"test": "npm run lint && node test.js",
+		"test": "npm run lint && node test.js && npm run coverage-quiet",
 		"coverage": "covert test.js",
 		"coverage-quiet": "covert test.js --quiet",
 		"lint": "jscs *.js"
