@@ -22,11 +22,11 @@ Simply clone the repo, `npm install`, and run `npm test`
 
 [1]: https://npmjs.org/package/listify
 [2]: http://vb.teelaun.ch/ljharb/listify.svg
-[3]: https://travis-ci.org/ljharb/listify.png
+[3]: https://travis-ci.org/ljharb/listify.svg
 [4]: https://travis-ci.org/ljharb/listify
-[5]: https://david-dm.org/ljharb/listify.png
+[5]: https://david-dm.org/ljharb/listify.svg
 [6]: https://david-dm.org/ljharb/listify
-[7]: https://david-dm.org/ljharb/listify/dev-status.png
+[7]: https://david-dm.org/ljharb/listify/dev-status.svg
 [8]: https://david-dm.org/ljharb/listify#info=devDependencies
 
 
