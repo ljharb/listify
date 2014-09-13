@@ -1,4 +1,4 @@
-#listify <sup>[![Version Badge][2]][npm-url]</sup>
+#listify <sup>[![Version Badge][npm-version-svg]][npm-url]</sup>
 
 [![Build Status][3]][4] [![dependency status][5]][6] [![dev dependency status][7]][8]
 
@@ -21,7 +21,7 @@ assert(listify([1, 2, 3], { separator: '… ', finalWord: 'or' }) === '1… 2…
 Simply clone the repo, `npm install`, and run `npm test`
 
 [npm-url]: https://npmjs.org/package/listify
-[2]: http://vb.teelaun.ch/ljharb/listify.svg
+[npm-version-svg]: http://vb.teelaun.ch/ljharb/listify.svg
 [3]: https://travis-ci.org/ljharb/listify.svg
 [4]: https://travis-ci.org/ljharb/listify
 [5]: https://david-dm.org/ljharb/listify.svg
