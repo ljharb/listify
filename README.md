@@ -1,6 +1,8 @@
 #listify <sup>[![Version Badge][npm-version-svg]][npm-url]</sup>
 
-[![Build Status][3]][4] [![dependency status][5]][6] [![dev dependency status][7]][8]
+[![Build Status][travis-svg]][travis-url]
+[![dependency status][5]][6]
+[![dev dependency status][7]][8]
 
 Turn an array into a list of comma-separated values, appropriate for use in an English sentence.
 
@@ -22,8 +24,8 @@ Simply clone the repo, `npm install`, and run `npm test`
 
 [npm-url]: https://npmjs.org/package/listify
 [npm-version-svg]: http://vb.teelaun.ch/ljharb/listify.svg
-[3]: https://travis-ci.org/ljharb/listify.svg
-[4]: https://travis-ci.org/ljharb/listify
+[travis-svg]: https://travis-ci.org/ljharb/listify.svg
+[travis-url]: https://travis-ci.org/ljharb/listify
 [5]: https://david-dm.org/ljharb/listify.svg
 [6]: https://david-dm.org/ljharb/listify
 [7]: https://david-dm.org/ljharb/listify/dev-status.svg
