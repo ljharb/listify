@@ -1,5 +1,5 @@
 /*jslint node: true */
-"use strict";
+'use strict';
 
 var test = require('tape');
 var listify = require('./index');

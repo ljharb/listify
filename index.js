@@ -1,7 +1,7 @@
 /*jslint node: true */
 
 var listify = function listify(list) {
-	"use strict";
+	'use strict';
 
 	if (!Array.isArray(list)) {
 		throw new TypeError('requires an array');
