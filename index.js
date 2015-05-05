@@ -1,15 +1,12 @@
 /*jslint node: true */
 'use strict';
 
-var listify = function listify(list) {
+var listify = function listify(list, options) {
 	if (!Array.isArray(list)) {
 		throw new TypeError('requires an array');
 	}
+	options = options || {};
 
-	var options = arguments.length > 1 ? arguments[1] : null;
-	if (!options) {
-		options = {};
-	}
 	var separator = options.hasOwnProperty('separator') ? options.separator : ', ';
 	var finalWord = options.hasOwnProperty('finalWord') ? options.finalWord : 'and';
 	if (finalWord.length > 0) {
