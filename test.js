@@ -24,6 +24,11 @@ test('listifies 2 items', function (t) {
 	t.end();
 });
 
+test('listifies 2 items, supports finalWord', function (t) {
+	t.equal(listify([1, 2], { finalWord: 'and' }), '1 and 2', 'two items with finalWord');
+	t.end();
+});
+
 test('listifies 2 items, supports no finalWord', function (t) {
 	t.equal(listify([1, 2], { finalWord: false }), '1, 2', 'two items, no final word, gives only separator');
 	t.end();
