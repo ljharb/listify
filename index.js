@@ -1,6 +1,8 @@
 /*jslint node: true */
 'use strict';
 
+var has = require('has');
+
 var listify = function listify(list) {
 	if (!Array.isArray(list)) {
 		throw new TypeError('requires an array');
@@ -10,8 +12,8 @@ var listify = function listify(list) {
 	if (!options) {
 		options = {};
 	}
-	var separator = options.hasOwnProperty('separator') ? options.separator : ', ';
-	var finalWord = options.hasOwnProperty('finalWord') ? options.finalWord : 'and';
+	var separator = has(options, 'separator') ? options.separator : ', ';
+	var finalWord = has(options, 'finalWord') ? options.finalWord : 'and';
 	if (finalWord.length > 0) {
 		finalWord += ' ';
 	}
