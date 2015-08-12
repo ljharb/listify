@@ -23,7 +23,7 @@ assert(listify([1, 2, 3], { separator: '… ', finalWord: 'or' }) === '1… 2…
 Simply clone the repo, `npm install`, and run `npm test`
 
 [npm-url]: https://npmjs.org/package/listify
-[npm-version-svg]: http://vb.teelaun.ch/ljharb/listify.svg
+[npm-version-svg]: http://versionbadg.es/ljharb/listify.svg
 [travis-svg]: https://travis-ci.org/ljharb/listify.svg
 [travis-url]: https://travis-ci.org/ljharb/listify
 [deps-svg]: https://david-dm.org/ljharb/listify.svg
