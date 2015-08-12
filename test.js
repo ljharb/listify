@@ -46,7 +46,7 @@ test('supports finalWord', function (t) {
 test('stringifies separator and finalWord', function (t) {
 	var sep = { toString: function () { return 'foo'; } };
 	var word = { toString: function () { return 'bar'; } };
-	t.equal(listify([1, 2, 3], { separator: sep, finalWord: word }), '1foo2foobar3', 'stringifies options');
+	t.equal(listify([1, 2, 3], { finalWord: word, separator: sep }), '1foo2foobar3', 'stringifies options');
 	t.end();
 });
 
