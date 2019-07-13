@@ -30,7 +30,7 @@
 		"url": "https://github.com/ljharb/listify/issues"
 	},
 	"dependencies": {
-		"has": "^1.0.1"
+		"has": "^1.0.3"
 	},
 	"devDependencies": {
 		"tape": "^4.2.0",
