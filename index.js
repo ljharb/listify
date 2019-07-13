@@ -2,7 +2,7 @@
 
 var has = require('has');
 
-var listify = function listify(list) {
+module.exports = function listify(list) {
 	if (!Array.isArray(list)) {
 		throw new TypeError('requires an array');
 	}
@@ -17,7 +17,9 @@ var listify = function listify(list) {
 		finalWord += ' ';
 	}
 
-	var trimmed = list.filter(function (item) { return String(item).trim(); });
+	var trimmed = list.filter(function (item) {
+		return String(item).trim();
+	});
 	var str;
 	if (trimmed.length === 2 && finalWord.length > 0) {
 		str = trimmed.join(' ' + finalWord);
@@ -28,6 +30,4 @@ var listify = function listify(list) {
 	}
 	return str;
 };
-
-module.exports = listify;
 

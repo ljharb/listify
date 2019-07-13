@@ -1,10 +1,10 @@
 'use strict';
 
 var test = require('tape');
-var listify = require('./index');
+var listify = require('../');
 
 test('throws when not given an array', function (t) {
-	t.throws(function () { listify(); }, TypeError, 'requires an array');
+	t['throws'](function () { listify(); }, TypeError, 'requires an array');
 	t.end();
 });
 

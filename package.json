@@ -33,10 +33,10 @@
 		"has": "^1.0.3"
 	},
 	"devDependencies": {
-		"tape": "^4.2.0",
-		"covert": "^1.1.0",
-		"eslint": "^1.1.0",
-		"@ljharb/eslint-config": "^1.0.4"
+		"@ljharb/eslint-config": "^13.1.1",
+		"covert": "^1.1.1",
+		"eslint": "^5.16.0",
+		"tape": "^4.11.0"
 	},
 	"engines": {
 		"node": ">= 0.4"
