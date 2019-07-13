@@ -4,11 +4,12 @@
 	"description": "Turn an array into a list of comma-separated values, appropriate for use in an English sentence.",
 	"main": "index.js",
 	"scripts": {
-		"test": "npm run lint && node test.js && npm run coverage-quiet && npm run security",
+		"pretest": "npm run lint",
+		"test": "node test && npm run coverage-quiet",
+		"posttest": "npx aud",
 		"coverage": "covert test.js",
 		"coverage-quiet": "covert test.js --quiet",
-		"lint": "eslint .",
-		"security": "nsp package"
+		"lint": "eslint ."
 	},
 	"repository": {
 		"type": "git",
@@ -35,8 +36,7 @@
 		"tape": "^4.2.0",
 		"covert": "^1.1.0",
 		"eslint": "^1.1.0",
-		"@ljharb/eslint-config": "^1.0.4",
-		"nsp": "^1.0.3"
+		"@ljharb/eslint-config": "^1.0.4"
 	},
 	"engines": {
 		"node": ">= 0.4"
