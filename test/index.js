@@ -50,3 +50,14 @@ test('stringifies separator and finalWord', function (t) {
 	t.end();
 });
 
+test('properly handles whitespace-only strings', function (t) {
+	t.equal(listify(['a', '  ', 'b', 'c']), 'a, b, and c', 'ignores whitespace-only items (3 + 1)');
+	t.equal(listify(['a', '  ', 'b']), 'a and b', 'ignores whitespace-only items (2 + 1)');
+	t.equal(listify(['a', '  ']), 'a', 'ignores whitespace-only items (1 + 1)');
+	t.end();
+});
+
+test('properly handles trailing whitespace', function (t) {
+	t.equal(listify([' a', 'b ', ' c ', 'd']), ' a, b ,  c , and d', 'does not trim whitespace from items');
+	t.end();
+});
