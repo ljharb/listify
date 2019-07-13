@@ -5,10 +5,10 @@
 	"main": "index.js",
 	"scripts": {
 		"pretest": "npm run lint",
-		"test": "node test && npm run coverage-quiet",
+		"tests-only": "node test",
+		"test": "npm run tests-only && npm run coverage -- --quiet",
 		"posttest": "npx aud",
-		"coverage": "covert test.js",
-		"coverage-quiet": "covert test.js --quiet",
+		"coverage": "covert test",
 		"lint": "eslint ."
 	},
 	"repository": {
@@ -42,4 +42,3 @@
 		"node": ">= 0.4"
 	}
 }
-
