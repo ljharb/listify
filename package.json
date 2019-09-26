@@ -4,6 +4,7 @@
 	"description": "Turn an array into a list of comma-separated values, appropriate for use in an English sentence.",
 	"main": "index.js",
 	"scripts": {
+		"prepublish": "safe-publish-latest",
 		"pretest": "npm run lint",
 		"tests-only": "node test",
 		"test": "npm run tests-only && npm run coverage -- --quiet",
@@ -34,9 +35,10 @@
 		"string.prototype.trim": "^1.2.0"
 	},
 	"devDependencies": {
-		"@ljharb/eslint-config": "^13.1.1",
+		"@ljharb/eslint-config": "^14.1.0",
 		"covert": "^1.1.1",
-		"eslint": "^5.16.0",
+		"eslint": "^6.4.0",
+		"safe-publish-latest": "^1.1.3",
 		"tape": "^4.11.0"
 	},
 	"engines": {

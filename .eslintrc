@@ -5,5 +5,5 @@
 
 	"rules": {
 		"max-statements": [2, 16]
-	}
+	},
 }
