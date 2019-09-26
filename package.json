@@ -31,7 +31,7 @@
 	},
 	"dependencies": {
 		"has": "^1.0.3",
-		"string.prototype.trim": "^1.1.2"
+		"string.prototype.trim": "^1.2.0"
 	},
 	"devDependencies": {
 		"@ljharb/eslint-config": "^13.1.1",
