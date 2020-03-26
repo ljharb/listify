@@ -8,7 +8,7 @@
 		"pretest": "npm run lint",
 		"tests-only": "node test",
 		"test": "npm run tests-only && npm run coverage -- --quiet",
-		"posttest": "npx aud",
+		"posttest": "npx aud --production",
 		"coverage": "covert test",
 		"lint": "eslint .",
 		"version": "auto-changelog && git add CHANGELOG.md",
