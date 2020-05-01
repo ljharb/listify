@@ -1,7 +1,6 @@
 'use strict';
 
 var has = require('has');
-var trim = require('string.prototype.trim');
 
 module.exports = function listify(list) {
 	if (!Array.isArray(list)) {
@@ -18,7 +17,9 @@ module.exports = function listify(list) {
 		finalWord += ' ';
 	}
 
-	var trimmed = list.filter(trim);
+	var trimmed = list.filter(function (item) {
+		return String(item).trim();
+	});
 	var str;
 	if (trimmed.length === 2 && finalWord.length > 0) {
 		str = trimmed.join(' ' + finalWord);
