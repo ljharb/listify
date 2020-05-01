@@ -41,12 +41,12 @@
 	},
 	"devDependencies": {
 		"@ljharb/eslint-config": "^16.0.0",
-		"aud": "^1.1.0",
+		"aud": "^1.1.1",
 		"auto-changelog": "^2.0.0",
 		"covert": "^1.1.1",
 		"eslint": "^6.8.0",
 		"safe-publish-latest": "^1.1.4",
-		"tape": "^5.0.0-next.5"
+		"tape": "^5.0.0"
 	},
 	"engines": {
 		"node": ">= 0.4"
