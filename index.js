@@ -1,9 +1,15 @@
 'use strict';
 
-var has = require('has');
+var has = Function.call.bind(Object.prototype.hasOwnProperty);
+var join = Function.call.bind(Array.prototype.join);
+var trim = Function.call.bind(String.prototype.trim);
+var isArray = Array.isArray;
+var filter = Function.call.bind(Array.prototype.filter);
+var slice = Function.call.bind(Array.prototype.slice);
+var concat = Function.call.bind(Array.prototype.concat);
 
 module.exports = function listify(list) {
-	if (!Array.isArray(list)) {
+	if (!isArray(list)) {
 		throw new TypeError('requires an array');
 	}
 
@@ -17,16 +23,14 @@ module.exports = function listify(list) {
 		finalWord += ' ';
 	}
 
-	var trimmed = list.filter(function (item) {
-		return String(item).trim();
-	});
+	var trimmed = filter(list, trim);
 	var str;
 	if (trimmed.length === 2 && finalWord.length > 0) {
-		str = trimmed.join(' ' + finalWord);
+		str = join(trimmed, ' ' + finalWord);
 	} else if (trimmed.length < 3) {
-		str = trimmed.join(separator);
+		str = join(trimmed, separator);
 	} else {
-		str = trimmed.slice(0, -1).concat(finalWord + trimmed[trimmed.length - 1]).join(separator);
+		str = join(concat(slice(trimmed, 0, -1), finalWord + trimmed[trimmed.length - 1]), separator);
 	}
 	return str;
 };

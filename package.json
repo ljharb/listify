@@ -36,7 +36,6 @@
 		"url": "https://github.com/ljharb/listify/issues"
 	},
 	"dependencies": {
-		"has": "^1.0.3"
 	},
 	"devDependencies": {
 		"@ljharb/eslint-config": "^16.0.0",
