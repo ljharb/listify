@@ -1,6 +1,6 @@
 {
 	"name": "listify",
-	"version": "1.0.2",
+	"version": "1.0.3",
 	"description": "Turn an array into a list of comma-separated values, appropriate for use in an English sentence.",
 	"main": "index.js",
 	"scripts": {
@@ -35,8 +35,7 @@
 	"bugs": {
 		"url": "https://github.com/ljharb/listify/issues"
 	},
-	"dependencies": {
-	},
+	"dependencies": {},
 	"devDependencies": {
 		"@ljharb/eslint-config": "^16.0.0",
 		"aud": "^1.1.1",
