@@ -19,3 +19,5 @@ node_modules/
 npm-shrinkwrap.json
 package-lock.json
 yarn.lock
+
+.npmignore
